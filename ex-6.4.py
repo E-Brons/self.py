@@ -5,7 +5,7 @@ def is_valid_letter_input(input_string, old_letter_guessed):
         :param arg1: input string to be validated
         :type arg1:  string
         :param arg2: list of letters that were previously guessed
-        :type arg1:  list
+        :type arg2:  list
         :return: True if input = a Single English letter; False otherwise
         :rtype: bool
     '''
