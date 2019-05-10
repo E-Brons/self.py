@@ -41,9 +41,13 @@ HANGMAN_PHOTOS = {
         
 def print_hangman(num_of_tries, color = 'white'):
     """
-    print the progress as text and image describing number of tries
+    return a picture describing number of tries
     :param num_of_tries: number of wrong tries
     :type num_of_tries: int
+    :return: a string which describes the number of tries
+    :rtype: str
     """
+    output =""
     for line in HANGMAN_PHOTOS[num_of_tries]:
-        print (colored(line , color))
+        output += line + "\n"
+    return output

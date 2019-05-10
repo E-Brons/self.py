@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+from ex5 import check_valid_input
+ 
 def try_update_letter_guessed(input_string, old_letter_guessed):
     """ update letter_guessed list if input is valid (see is_valid_letter_input)
         :param input_string: input string to be validated
@@ -9,7 +11,7 @@ def try_update_letter_guessed(input_string, old_letter_guessed):
         :rtype: bool
     """
     lowered_input = input_string.lower()
-    if is_valid_letter_input(lowered_input, old_letter_guessed):
+    if check_valid_input(lowered_input, old_letter_guessed):
         old_letter_guessed += lowered_input
         return True
     else:
